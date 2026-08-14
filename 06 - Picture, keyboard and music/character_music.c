@@ -167,9 +167,6 @@ SDL_AppResult SDL_AppEvent(void *appstate, SDL_Event *event)
          // Toggle desktop fullscreen Alt+Enter
         else if ((event->key.scancode == SDL_SCANCODE_RETURN) && (event->key.mod & SDL_KMOD_LALT))
         {
-            
-        //} && event->key.mod & SDL_KMOD_LALT) {
-       
             bool is_fullscreen = !(SDL_GetWindowFlags(window) & SDL_WINDOW_FULLSCREEN);
             SDL_SetWindowFullscreen(window, is_fullscreen);
             SDL_SyncWindow(window); // Wait for change to apply
