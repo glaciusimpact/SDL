@@ -9,6 +9,7 @@ C code using SDL3 is provided as is.
 - [04 - Keyboard](04%20-%20Keyboard)
 - [05 - Music](05%20-%20Music)
 - [06 - Picture, keyboard and music](06%20-%20Picture,%20keyboard%20and%20music)
+- [07 - Circle, rectangle, line, point](07%20-%20Circle,%20rectangle,%20line,%20point)
 
 
 To compile the source code the following tools are required:
