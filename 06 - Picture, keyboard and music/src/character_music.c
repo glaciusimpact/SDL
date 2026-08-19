@@ -206,6 +206,7 @@ void SDL_AppQuit(void *appstate, SDL_AppResult result)
  
     /* SDL will clean up the window/renderer for us. */
     SDL_DestroyTexture(texture);
+    SDL_DestroyTexture(texture_background);
     
 	/* This will close the audio device and free all mixers and audio data */
     MIX_Quit();

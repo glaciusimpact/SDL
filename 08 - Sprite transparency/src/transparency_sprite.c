@@ -240,5 +240,5 @@ void SDL_AppQuit(void *appstate, SDL_AppResult result)
  
     /* SDL will clean up the window/renderer for us. */
     SDL_DestroyTexture(texture);
-    
+    SDL_DestroyTexture(texture_background);
 }
