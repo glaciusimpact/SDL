@@ -11,6 +11,7 @@ C code using SDL3 is provided as is.
 - [06 - Picture, keyboard and music](06%20-%20Picture,%20keyboard%20and%20music)
 - [07 - Circle, rectangle, line, point](07%20-%20Circle,%20rectangle,%20line,%20point)
 - [08 - Sprite transparency](08%20-%20Sprite%20transparency)
+- [09 - Animated sprite](09%20-%20Animated%20sprite)
 
 To compile the source code the following tools are required:
 - gcc from Mingw64
