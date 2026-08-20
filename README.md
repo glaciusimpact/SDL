@@ -1,5 +1,5 @@
 # SDL
-SDL3 codes to display a sprite, to use keyboard or to play music.
+SDL3 codes to display a sprite, to use keyboard or to play music on Windows.
 
 C code using SDL3 is provided as is.
 
