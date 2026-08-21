@@ -12,6 +12,7 @@ C code using SDL3 is provided as is.
 - [07 - Circle, rectangle, line, point](07%20-%20Circle,%20rectangle,%20line,%20point)
 - [08 - Sprite transparency](08%20-%20Sprite%20transparency)
 - [09 - Animated sprite](09%20-%20Animated%20sprite)
+- [10 - Icon](10%20-%20Icon)
 
 To compile the source code the following tools are required:
 - gcc from Mingw64
@@ -26,3 +27,27 @@ Here is an example of a compilation command for the program `character_music.exe
 ``` bash
 gcc.exe -fdiagnostics-color=always -masm=intel -fno-ident -mwindows -s -Os -Wall character_music.c -o character_music.exe -I C:\SDL\x86_64-w64-mingw32\include -L C:\SDL\x86_64-w64-mingw32\lib -lSDL3 -lSDL3_mixer
 ```
+
+As for the icon added to an executable there are 3 steps to do so:
+1. Creating a .rc file
+
+res.rc
+```
+id ICON "icon.ico"
+```
+
+2. Building a resource file using windres
+
+```
+windres res.rc -O coff -o my_res.res
+```
+
+3. Adding the .res file during compilation time (here "my_res.res")
+
+```
+gcc.exe -fdiagnostics-color=always -masm=intel -fno-ident -mwindows -s -Os -Wall src\icon.c -o icon.exe -I C:\SDL\x86_64-w64-mingw32\include -L C:\SDL\x86_64-w64-mingw32\lib -lSDL3 res\my_res.res
+```
+
+
+
+
